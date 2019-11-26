@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(139, 149, 158);
+}
+
+a:hover{
+  color: rgb(25, 28, 31);
+}
+
+span{
+  color: rgb(139, 149, 158);
+  cursor: pointer;
+}
+
+span:hover{
+  color: rgb(25, 28, 31);
+}
+
+.color-active{
+  color: rgb(25, 28, 31);
+}
+
+ul{
+  list-style-type: none;
+}
+
+header{
+  height: 124px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container{
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container::after{
+  clear: both;
+  display: table;
+  content: '';
+}
+
+.header-left{
+  float: left;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-left a:first-child{
+  height: 100%;
+}
+
+.header-left a:nth-child(2){
+  margin-left: 32px;
+  margin-right: 24px;
+  color: rgb(25, 28, 31);
+}
+
+.header-left img{
+  height: 100%;
+}
+
+.header-right{
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-right .menu-drop{
+  margin-left: 32px;
+  position: relative;
+}
+
+.header-right span{
+  padding-bottom: 10px;
+}
+
+.fa-angle-down{
+  margin-left: 5px;
+}
+
+#d-app{
+  display: block;
+  background-color: rgb(224, 0, 135);
+  padding: 10px 24px;
+  margin-left: 32px;
+  border-radius: 32px;
+  color: white;
+  font-weight: 500;
+}
+
+#d-app:hover{
+  background-color: rgb(210, 0, 126);
+}
+
+.drop{
+  display: none;
+  position: absolute;
+  left: -32px;
+  margin-top: 8px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+}
+
+/* .menu-drop:hover .drop{
+  display: block;
+} */
+
+.drop ul li a{
+  display: block;
+  padding: 16px 32px;
+}
